@@ -165,6 +165,8 @@
     "title": "Alerty i Powiadomienia",
     "description": "Otrzymuj powiadomienia, gdy warunki są optymalne dla Twojego połowu.",
     "newAlert": "Nowy Alert",
+    "featureInDevelopmentTitle": "Funkcja w przygotowaniu",
+    "featureInDevelopmentDescription": "Pracujemy nad tym, aby funkcja dodawania nowych alertów była dostępna już wkrótce!",
     "activeAlerts": "Aktywne Alerty",
     "history": "Historia Alertów",
     "settings": "Ustawienia Alertów",

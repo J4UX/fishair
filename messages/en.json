@@ -165,6 +165,8 @@
     "title": "Alerts & Notifications",
     "description": "Receive notifications when conditions are optimal for your catch.",
     "newAlert": "New Alert",
+    "featureInDevelopmentTitle": "Feature in Development",
+    "featureInDevelopmentDescription": "We are working hard to bring you the ability to create new alerts very soon!",
     "activeAlerts": "Active Alerts",
     "history": "Alert History",
     "settings": "Alert Settings",

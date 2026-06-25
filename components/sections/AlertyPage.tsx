@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
   Bell,
@@ -77,10 +78,20 @@ export function AlertyPage() {
           <h1 className="text-3xl font-bold tracking-tight">{t("title")}</h1>
           <p className="mt-1 text-muted-foreground">{t("description")}</p>
         </div>
-        <Button className="gap-2">
-          <Plus data-icon="inline-start" />
-          {t("newAlert")}
-        </Button>
+        <Dialog>
+          <DialogTrigger render={<Button className="gap-2" />}>
+            <Plus data-icon="inline-start" />
+            {t("newAlert")}
+          </DialogTrigger>
+          <DialogContent>
+            <DialogHeader>
+              <DialogTitle>{t("featureInDevelopmentTitle")}</DialogTitle>
+              <DialogDescription>
+                {t("featureInDevelopmentDescription")}
+              </DialogDescription>
+            </DialogHeader>
+          </DialogContent>
+        </Dialog>
       </div>
 
       {/* Stats */}
