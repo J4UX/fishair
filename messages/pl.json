@@ -421,7 +421,7 @@
       "biggestCatch": "Największy połów",
       "favoriteSpot": "Ulubione miejsce"
     },
-    "profileSubtitle": "Wędkarz od 2020",
+    "profileSubtitle": "Wędkarz od 2026",
     "editProfile": "Edytuj profil",
     "personalInfoDescription": "Twoje dane osobowe wyświetlane w profilu.",
     "preferencesDescription": "Ustaw swoje preferencje wędkarskie, aby otrzymywać spersonalizowane rekomendacje.",
@@ -432,8 +432,18 @@
     "deleteAccount": "Usuń konto",
     "deleteAccountDescription": "Trwale usuń konto i wszystkie dane",
     "delete": "Usuń",
-    "preferredSpecies": ["Szczupak", "Okoń", "Sandacz", "Sum", "Karp"],
-    "preferredWaterTypes": ["Jeziora", "Rzeki", "Zbiorniki zaporowe"]
+    "preferredSpecies": [
+      "Szczupak",
+      "Okoń",
+      "Sandacz",
+      "Sum",
+      "Karp"
+    ],
+    "preferredWaterTypes": [
+      "Jeziora",
+      "Rzeki",
+      "Zbiorniki zaporowe"
+    ]
   },
   "footer": {
     "about": "FISH.AIR to nowoczesna platforma dla wędkarzy w Polsce, wykorzystująca dane do przewidywania optymalnych warunków połowu.",

@@ -421,7 +421,7 @@
       "biggestCatch": "Biggest Catch",
       "favoriteSpot": "Favorite Spot"
     },
-    "profileSubtitle": "Angler since 2020",
+    "profileSubtitle": "Angler since 2026",
     "editProfile": "Edit Profile",
     "personalInfoDescription": "Your personal data displayed on your profile.",
     "preferencesDescription": "Set your fishing preferences to receive personalised recommendations.",
@@ -432,8 +432,18 @@
     "deleteAccount": "Delete Account",
     "deleteAccountDescription": "Permanently delete your account and all data",
     "delete": "Delete",
-    "preferredSpecies": ["Pike", "Perch", "Pikeperch", "Catfish", "Carp"],
-    "preferredWaterTypes": ["Lakes", "Rivers", "Reservoirs"]
+    "preferredSpecies": [
+      "Pike",
+      "Perch",
+      "Pikeperch",
+      "Catfish",
+      "Carp"
+    ],
+    "preferredWaterTypes": [
+      "Lakes",
+      "Rivers",
+      "Reservoirs"
+    ]
   },
   "footer": {
     "about": "FISH.AIR is a modern platform for anglers in Poland, using data to predict optimal fishing conditions.",

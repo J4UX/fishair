@@ -145,45 +145,45 @@ export function AlertyPage() {
               <p className="mt-1 text-sm text-muted-foreground">{t("empty.description")}</p>
             </div>
           ) : (
-            <div className="overflow-x-auto">
-              <table className="w-full">
+            <div className="overflow-x-auto pb-4">
+              <table className="w-full whitespace-nowrap">
                 <thead>
                   <tr className="border-b text-left text-sm text-muted-foreground">
-                    <th className="pb-3 font-medium">{t("table.location")}</th>
-                    <th className="pb-3 font-medium">{t("table.species")}</th>
-                    <th className="pb-3 font-medium">{t("table.biteChance")}</th>
-                    <th className="pb-3 font-medium">{t("table.condition")}</th>
-                    <th className="pb-3 font-medium">{t("table.time")}</th>
-                    <th className="pb-3 font-medium">{t("table.status")}</th>
-                    <th className="pb-3 font-medium" />
+                    <th className="pb-3 px-4 font-medium">{t("table.location")}</th>
+                    <th className="pb-3 px-4 font-medium">{t("table.species")}</th>
+                    <th className="pb-3 px-4 font-medium">{t("table.biteChance")}</th>
+                    <th className="pb-3 px-4 font-medium">{t("table.condition")}</th>
+                    <th className="pb-3 px-4 font-medium">{t("table.time")}</th>
+                    <th className="pb-3 px-4 font-medium">{t("table.status")}</th>
+                    <th className="pb-3 px-4 font-medium" />
                   </tr>
                 </thead>
                 <tbody>
                   {filtered.map((alert) => (
-                    <tr key={alert.id} className="border-b text-sm last:border-0">
-                      <td className="py-3">
+                    <tr key={alert.id} className="border-b text-sm last:border-0 hover:bg-muted/50 transition-colors">
+                      <td className="py-4 px-4">
                         <div className="flex items-center gap-2">
                           <MapPin className="size-4 text-muted-foreground" />
                           {alert.location}
                         </div>
                       </td>
-                      <td className="py-3">{t(`species.${alert.species}`)}</td>
-                      <td className="py-3">
-                        <div className="flex items-center gap-2">
-                          <div className="h-2 w-16 overflow-hidden rounded-full bg-muted">
+                      <td className="py-4 px-4 font-medium">{t(`species.${alert.species}`)}</td>
+                      <td className="py-4 px-4">
+                        <div className="flex items-center gap-3">
+                          <div className="h-2.5 w-20 overflow-hidden rounded-full bg-muted/80">
                             <div
-                              className="h-full rounded-full bg-primary transition-all"
+                              className="h-full rounded-full bg-primary transition-all duration-500 ease-out"
                               style={{ width: `${alert.biteChance}%` }}
                             />
                           </div>
-                          <span>{alert.biteChance}%</span>
+                          <span className="font-medium">{alert.biteChance}%</span>
                         </div>
                       </td>
-                      <td className="py-3">{getConditionLabel(alert.condition)}</td>
-                      <td className="py-3 text-muted-foreground">{alert.time}</td>
-                      <td className="py-3">{getStatusBadge(alert.status, t)}</td>
-                      <td className="py-3">
-                        <Button variant="ghost" size="icon" className="size-8">
+                      <td className="py-4 px-4">{getConditionLabel(alert.condition)}</td>
+                      <td className="py-4 px-4 text-muted-foreground">{alert.time}</td>
+                      <td className="py-4 px-4">{getStatusBadge(alert.status, t)}</td>
+                      <td className="py-4 px-4 text-right">
+                        <Button variant="ghost" size="icon" className="size-8 text-muted-foreground hover:text-destructive">
                           <Trash2 className="size-4" />
                         </Button>
                       </td>
