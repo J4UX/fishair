@@ -1,0 +1,446 @@
+{
+  "common": {
+    "siteName": "FISH.AIR",
+    "siteDescription": "Find the best fishing spots in Poland",
+    "language": "Language",
+    "polish": "Polish",
+    "english": "English",
+    "loading": "Loading...",
+    "viewAll": "View All",
+    "learnMore": "Learn More",
+    "back": "Back",
+    "close": "Close",
+    "search": "Search",
+    "noResults": "No results"
+  },
+  "nav": {
+    "home": "Home",
+    "map": "Map",
+    "alerts": "Alerts",
+    "rybopedia": "Rybopedia",
+    "profile": "Profile"
+  },
+  "home": {
+    "hero": {
+      "title": "Find Your Perfect Catch",
+      "subtitle": "FISH.AIR uses advanced weather and environmental data analysis to help anglers in Poland find the best spots and conditions for a successful catch.",
+      "cta": "Discover Spots",
+      "secondaryCta": "How It Works"
+    },
+    "features": {
+      "title": "Smart Fishing",
+      "description": "We use weather data, atmospheric pressure, water temperature, and many other factors to predict fish activity in real time.",
+      "items": {
+        "map": {
+          "title": "Interactive Map",
+          "description": "Browse all fishing waters in Poland on one interactive map. Filter by fish species, conditions, and distance."
+        },
+        "alerts": {
+          "title": "Smart Alerts",
+          "description": "Receive notifications when conditions are optimal for your favorite fish species in selected locations."
+        },
+        "rybopedia": {
+          "title": "Fish Encyclopedia",
+          "description": "Comprehensive knowledge base about fish found in Polish waters — from biology to fishing techniques."
+        },
+        "forecast": {
+          "title": "Bite Forecast",
+          "description": "Daily fish activity forecast based on meteorological data and historical bite patterns."
+        }
+      }
+    },
+    "reviews": {
+      "title": "What Anglers Say",
+      "items": [
+        {
+          "name": "Marek K.",
+          "role": "Angler for 15 years",
+          "text": "FISH.AIR completely changed my approach to fishing. Thanks to the alerts, I never miss optimal conditions. Last season I caught my personal record!"
+        },
+        {
+          "name": "Anna W.",
+          "role": "Fishing Enthusiast",
+          "text": "The map is incredibly accurate. I found spots I had no idea about. The Rybopedia is a treasure trove of knowledge — I recommend it to anyone starting their fishing journey."
+        },
+        {
+          "name": "Tomasz R.",
+          "role": "Professional Fishing Guide",
+          "text": "As a guide, I use FISH.AIR daily. The bite forecasts are surprisingly accurate, and my clients are thrilled with the results. This is the number one tool in my arsenal."
+        }
+      ]
+    },
+    "team": {
+      "title": "Our Team",
+      "description": "We are a group of technology and fishing enthusiasts who joined forces to create the tool we always needed ourselves.",
+      "members": {
+        "sandra": {
+          "name": "Sandra Nguyễn",
+          "role": ""
+        },
+        "krzysztof": {
+          "name": "Krzysztof Bombola",
+          "role": ""
+        },
+        "olga": {
+          "name": "Olga Szymczak",
+          "role": ""
+        },
+        "wiktoria": {
+          "name": "Wiktoria Bielejewska",
+          "role": ""
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready for Your Next Catch?",
+      "description": "Join the community of anglers already using FISH.AIR to catch more and smarter.",
+      "button": "Get Started for Free"
+    }
+  },
+  "mapa": {
+    "title": "Fishing Waters Map",
+    "description": "Interactive map of waters in Poland with real-time bite forecasts.",
+    "legend": {
+      "title": "Legend",
+      "excellent": "Excellent conditions",
+      "good": "Good conditions",
+      "moderate": "Moderate conditions",
+      "poor": "Poor conditions",
+      "lake": "Lake",
+      "river": "River",
+      "reservoir": "Reservoir"
+    },
+    "filters": {
+      "title": "Filters",
+      "fishSpecies": "Fish species",
+      "waterType": "Water type",
+      "conditions": "Conditions",
+      "distance": "Distance",
+      "apply": "Apply",
+      "reset": "Reset"
+    },
+    "detail": {
+      "biteChance": "Bite chance",
+      "waterTemp": "Water temperature",
+      "airTemp": "Air temperature",
+      "pressure": "Pressure",
+      "wind": "Wind",
+      "speciesAvailable": "Available species",
+      "bestHours": "Best hours",
+      "lastUpdated": "Last updated"
+    },
+    "map": {
+      "scrollToZoom": "Scroll to zoom · Drag to pan",
+      "noSpotsFound": "No fishing spots found",
+      "loadingSpots": "Loading spots..."
+    },
+    "regions": {
+      "warminskoMazurskie": "Warmian-Masurian",
+      "mazowieckie": "Masovian",
+      "podlaskie": "Podlaskie",
+      "dolnoslaskie": "Lower Silesian",
+      "podkarpackie": "Subcarpathian",
+      "pomorskie": "Pomeranian",
+      "wielkopolskie": "Greater Poland",
+      "kujawskoPomorskie": "Kuyavian-Pomeranian",
+      "zachodniopomorskie": "West Pomeranian"
+    },
+    "species": {
+      "pike": "Pike",
+      "perch": "Perch",
+      "pikeperch": "Pikeperch",
+      "eel": "Eel",
+      "bream": "Bream",
+      "catfish": "Wels Catfish",
+      "asp": "Asp",
+      "chub": "Chub",
+      "vendace": "Vendace",
+      "whitefish": "Whitefish",
+      "brownTrout": "Brown Trout",
+      "grayling": "Grayling",
+      "carp": "Carp"
+    }
+  },
+  "alerts": {
+    "title": "Alerts & Notifications",
+    "description": "Receive notifications when conditions are optimal for your catch.",
+    "newAlert": "New Alert",
+    "activeAlerts": "Active Alerts",
+    "history": "Alert History",
+    "settings": "Alert Settings",
+    "createAlert": {
+      "title": "Create Alert",
+      "location": "Location",
+      "species": "Fish species",
+      "conditions": "Conditions",
+      "threshold": "Minimum bite chance",
+      "notifyBy": "Notify via",
+      "email": "Email",
+      "push": "Push",
+      "save": "Save Alert",
+      "cancel": "Cancel"
+    },
+    "table": {
+      "location": "Location",
+      "species": "Species",
+      "biteChance": "Bite chance",
+      "condition": "Condition",
+      "time": "Time",
+      "status": "Status",
+      "date": "Date",
+      "active": "Active",
+      "triggered": "Triggered",
+      "dismissed": "Dismissed"
+    },
+    "empty": {
+      "title": "No alerts",
+      "description": "Create your first alert to receive notifications about optimal conditions."
+    },
+    "conditions": {
+      "excellent": "Excellent",
+      "good": "Good",
+      "moderate": "Moderate",
+      "poor": "Poor"
+    },
+    "statusLabels": {
+      "active": "Active",
+      "triggered": "Triggered",
+      "dismissed": "Dismissed"
+    },
+    "species": {
+      "pike": "Pike",
+      "perch": "Perch",
+      "pikeperch": "Pikeperch",
+      "carp": "Carp",
+      "brownTrout": "Brown Trout",
+      "catfish": "Wels Catfish",
+      "roach": "Roach",
+      "eel": "Eel",
+      "asp": "Asp",
+      "vendace": "Vendace",
+      "tench": "Tench",
+      "bream": "Bream"
+    }
+  },
+  "rybopedia": {
+    "title": "Fish Encyclopedia",
+    "description": "Comprehensive knowledge base about fish found in Polish waters.",
+    "search": "Search species...",
+    "categories": {
+      "all": "All",
+      "predatory": "Predatory",
+      "cyprinid": "Cyprinid",
+      "salmonid": "Salmonid",
+      "marine": "Marine"
+    },
+    "detail": {
+      "overview": "Overview",
+      "habitat": "Habitat",
+      "behavior": "Behavior",
+      "fishing": "Fishing Techniques",
+      "season": "Season",
+      "diet": "Diet",
+      "size": "Size",
+      "weight": "Weight",
+      "appearance": "Appearance",
+      "spawning": "Spawning",
+      "bestBait": "Best Bait",
+      "bestTime": "Best Time",
+      "difficulty": "Difficulty"
+    },
+    "noResults": {
+      "title": "No species found",
+      "description": "Try different search criteria."
+    },
+    "backToList": "Back to list",
+    "difficulty": {
+      "easy": "Easy",
+      "medium": "Medium",
+      "hard": "Hard",
+      "veryHard": "Very Hard"
+    },
+    "fish": {
+      "pike": {
+        "name": "Pike",
+        "overview": "Pike is one of the best-known and most prized freshwater predators. It has an elongated, torpedo-like body and a distinctive flattened snout resembling a duck's bill.",
+        "habitat": "Prefers vegetated, shallow still and slow-flowing waters. Found in lakes, ponds, oxbow lakes and calm stretches of rivers.",
+        "behavior": "An ambush predator that attacks violently from cover, using aquatic vegetation as camouflage. Most active at dawn and dusk.",
+        "fishing": "Effective methods include spinning (jerkbaits, soft plastics, spoons), live-bait fishing and fly fishing. Best results near vegetation and underwater structures.",
+        "season": "Year-round, except the closed season (1 Jan \u2013 30 Apr). Best bites in autumn and spring.",
+        "diet": "Fish (roach, perch, bream), frogs, small aquatic mammals and birds. Juveniles feed on invertebrates.",
+        "avgSize": "50\u201380 cm",
+        "maxWeight": "up to 35 kg",
+        "appearance": "Elongated body in shades of green and olive with light spots. Dorsal and anal fins shifted towards the tail.",
+        "spawning": "March\u2013April at 8\u201312\u00b0C, on flooded meadows and shallow floodplains.",
+        "bestBait": "Jerkbait, soft plastic, spoon, live bait",
+        "bestTime": "Dawn and dusk, overcast days",
+        "difficulty": "medium"
+      },
+      "perch": {
+        "name": "Perch",
+        "overview": "Perch is a common predator with characteristic striped colouring. One of the most frequently caught species in Polish waters, popular with beginners and experienced anglers alike.",
+        "habitat": "Inhabits diverse waters \u2014 lakes, rivers, ponds, reservoirs. Prefers hard-bottomed areas with underwater structures.",
+        "behavior": "Juveniles school; adults hunt alone or in small groups. Active mainly during the day.",
+        "fishing": "Spinning (small jerkbaits, soft plastics, spinners), bottom and float fishing with worm. Takes natural and artificial baits readily.",
+        "season": "Year-round (no closed season). Best bites from spring to autumn. Active under ice in winter.",
+        "diet": "Aquatic invertebrates, fry, small fish, eggs of other species.",
+        "avgSize": "15\u201330 cm",
+        "maxWeight": "up to 4.5 kg",
+        "appearance": "Slightly laterally compressed body with characteristic dark vertical bars. Reddish pelvic and anal fins.",
+        "spawning": "March\u2013May at 7\u201312\u00b0C on shallow, vegetated stretches.",
+        "bestBait": "Worm, small soft plastic, spinner, spoon",
+        "bestTime": "All day, especially morning and afternoon",
+        "difficulty": "easy"
+      },
+      "pikeperch": {
+        "name": "Pikeperch",
+        "overview": "Pikeperch is a highly prized predator with delicate white flesh. It prefers deep, turbid waters and is mainly active at night, requiring specific fishing techniques.",
+        "habitat": "Large deep lakes, reservoirs, lower stretches of rivers with silty or sandy beds.",
+        "behavior": "Nocturnal predator; stays at depth during the day. Hunts in groups, driving prey towards the shore.",
+        "fishing": "Spinning (soft plastics, deep-diving jerkbaits), dead-bait fishing, trolling. Key is presenting the lure close to the bottom.",
+        "season": "Year-round, except the closed season (1 Jan \u2013 31 May). Best in autumn.",
+        "diet": "Fish (bleak, smelt, ruffe); prefers slender prey.",
+        "avgSize": "40\u201360 cm",
+        "maxWeight": "up to 15 kg",
+        "appearance": "Elongated, fusiform body in shades of grey and green. Characteristic canine teeth.",
+        "spawning": "April\u2013May at 12\u201318\u00b0C on sandy or gravelly substrate.",
+        "bestBait": "Soft plastic (shads, rippers), jerkbait, dead bait",
+        "bestTime": "Night, dawn, dusk, overcast days",
+        "difficulty": "hard"
+      },
+      "carp": {
+        "name": "Carp",
+        "overview": "Carp is one of the most important species in Polish angling culture. Large, powerful and cunning, it is a serious challenge even for experienced carp anglers.",
+        "habitat": "Warm, still or slow-moving waters with muddy beds. Prefers ponds, lakes and oxbow lakes.",
+        "behavior": "Feeds near the bottom, actively digging through sediment. Cautious and easily spooked.",
+        "fishing": "Bottom and float fishing with specialist carp tackle. Baiting and bait selection (boilies, maize) are key.",
+        "season": "May\u2013October (best in summer). Activity drops significantly in winter.",
+        "diet": "Benthic invertebrates, insect larvae, plant matter, molluscs.",
+        "avgSize": "40\u201370 cm",
+        "maxWeight": "up to 40 kg",
+        "appearance": "Massive, humped body covered with large scales (fully scaled) or partly naked (mirror carp). Golden-brown colouring.",
+        "spawning": "May\u2013June at 18\u201320\u00b0C in shallow, vegetated areas.",
+        "bestBait": "Boilies, maize, worms, paste",
+        "bestTime": "Early morning and evening, warm nights",
+        "difficulty": "hard"
+      },
+      "brownTrout": {
+        "name": "Brown Trout",
+        "overview": "Brown trout is a beautiful, spirited fish inhabiting clean, cold mountain and foothill streams. It requires crystal-clear, well-oxygenated water.",
+        "habitat": "Fast-flowing mountain and foothill streams with stony beds, cold lakes. Requires high dissolved oxygen levels.",
+        "behavior": "Territorial; occupies lies behind boulders and in shaded spots. Actively rises to take insects on the surface.",
+        "fishing": "Fly fishing (the primary method), ultralight spinning (small spinners, jerkbaits). Requires delicate tackle and precision.",
+        "season": "March\u2013August (depending on the fishing district). Closed season: 1 Sep \u2013 31 Dec.",
+        "diet": "Aquatic and terrestrial insects, crustaceans, small fish.",
+        "avgSize": "20\u201335 cm",
+        "maxWeight": "up to 5 kg",
+        "appearance": "Slender body with characteristic red and black spots on the sides. Adipose dorsal fin.",
+        "spawning": "October\u2013January on gravel in cold, fast-flowing water.",
+        "bestBait": "Artificial fly, small spinner, worm",
+        "bestTime": "Morning and evening, after rain when water colours up",
+        "difficulty": "hard"
+      },
+      "catfish": {
+        "name": "Wels Catfish",
+        "overview": "The wels catfish is Europe's largest freshwater fish. It can reach impressive sizes and is a dream catch for many anglers. Targeting wels requires heavy tackle and great patience.",
+        "habitat": "Large, deep rivers, reservoirs, lakes. Prefers spots with submerged obstacles and deep holes.",
+        "behavior": "Mainly active at night. Spends the day in deep lairs. Ambush predator that uses its barbels to locate prey.",
+        "fishing": "Bottom fishing with live bait, spinning (large soft plastics, jerkbaits), vertical jigging. Very heavy tackle required.",
+        "season": "May\u2013October (best June\u2013August). Closed season: 1 Jan \u2013 31 May.",
+        "diet": "Fish, frogs, waterfowl, small mammals.",
+        "avgSize": "80\u2013150 cm",
+        "maxWeight": "up to 150 kg",
+        "appearance": "Massive, scale-less body; broad, flat head with characteristic long barbels. Olive-brown colouring.",
+        "spawning": "May\u2013July at 20\u201324\u00b0C in shallow, vegetated bays.",
+        "bestBait": "Live bait, dead bait, large soft plastic, bunch of worms",
+        "bestTime": "Night, early dawn, stormy overcast days",
+        "difficulty": "veryHard"
+      },
+      "roach": {
+        "name": "Roach",
+        "overview": "Roach is one of the most widespread fish in Poland, occurring in abundance across diverse waters. It is an excellent species for beginner anglers.",
+        "habitat": "Ubiquitous \u2014 lakes, rivers, canals, ponds, reservoirs. Prefers still and slow-flowing waters.",
+        "behavior": "Forms large shoals. Feeds mainly in mid-water and near the bottom. Active throughout the day.",
+        "fishing": "Float and bottom fishing. Takes small natural and plant baits readily.",
+        "season": "Year-round (no closed season). Best bites in spring and autumn.",
+        "diet": "Invertebrates, insect larvae, algae, plant matter.",
+        "avgSize": "15\u201325 cm",
+        "maxWeight": "up to 2 kg",
+        "appearance": "Slightly laterally compressed, silvery body. Reddish fins and orange iris.",
+        "spawning": "April\u2013May at 10\u201315\u00b0C in shallow, vegetated areas.",
+        "bestBait": "Maggot, red worm, maize, paste",
+        "bestTime": "All day, especially morning",
+        "difficulty": "easy"
+      },
+      "eel": {
+        "name": "Eel",
+        "overview": "The eel is a mysterious, snake-like fish with a fascinating life cycle. It undertakes long migrations to spawn in the Sargasso Sea.",
+        "habitat": "Still and slow-flowing waters with muddy beds. Found in lakes, ponds and rivers.",
+        "behavior": "Nocturnal. Spends the day buried in mud. Active from spring to autumn; enters torpor in winter.",
+        "fishing": "Bottom fishing with live bait or dead bait, float fishing on the bottom. Best results at night.",
+        "season": "May\u2013October. Closed season: 1 Dec \u2013 31 Mar (minimum size 50 cm).",
+        "diet": "Benthic invertebrates, small fish, frogs, carrion.",
+        "avgSize": "50\u201380 cm",
+        "maxWeight": "up to 6 kg",
+        "appearance": "Long, snake-like body covered in slime. Dark green or brown on the back, yellowish on the belly.",
+        "spawning": "Spawns in the Sargasso Sea at approx. 400\u2013700 m depth. Adults die after spawning.",
+        "bestBait": "Live bait, dead bait, earthworm, bunch of worms",
+        "bestTime": "Night, especially warm, dark nights",
+        "difficulty": "medium"
+      }
+    }
+  },
+  "profile": {
+    "title": "My Profile",
+    "description": "Manage your account and fishing preferences.",
+    "personalInfo": "Personal Information",
+    "fishingPreferences": "Fishing Preferences",
+    "catchLog": "Catch Log",
+    "savedLocations": "Saved Locations",
+    "settings": "Account Settings",
+    "fields": {
+      "name": "Full Name",
+      "email": "Email",
+      "phone": "Phone",
+      "location": "Location",
+      "experience": "Experience",
+      "preferredSpecies": "Preferred Species",
+      "preferredWaterType": "Preferred Water Type",
+      "notifications": "Notifications",
+      "language": "Language"
+    },
+    "experience": {
+      "beginner": "Beginner",
+      "intermediate": "Intermediate",
+      "advanced": "Advanced",
+      "expert": "Expert"
+    },
+    "stats": {
+      "totalCatches": "Total Catches",
+      "speciesCount": "Species Count",
+      "biggestCatch": "Biggest Catch",
+      "favoriteSpot": "Favorite Spot"
+    },
+    "profileSubtitle": "Angler since 2020",
+    "editProfile": "Edit Profile",
+    "personalInfoDescription": "Your personal data displayed on your profile.",
+    "preferencesDescription": "Set your fishing preferences to receive personalised recommendations.",
+    "settingsDescription": "Manage your account settings and notifications.",
+    "notificationsDescription": "Receive alerts about optimal conditions",
+    "languageDescription": "Change interface language",
+    "notificationsEnabled": "Enabled",
+    "deleteAccount": "Delete Account",
+    "deleteAccountDescription": "Permanently delete your account and all data",
+    "delete": "Delete",
+    "preferredSpecies": ["Pike", "Perch", "Pikeperch", "Catfish", "Carp"],
+    "preferredWaterTypes": ["Lakes", "Rivers", "Reservoirs"]
+  },
+  "footer": {
+    "about": "FISH.AIR is a modern platform for anglers in Poland, using data to predict optimal fishing conditions.",
+    "quickLinks": "Quick Links",
+    "contact": "Contact",
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  }
+}

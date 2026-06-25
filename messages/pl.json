@@ -1,0 +1,446 @@
+{
+  "common": {
+    "siteName": "FISH.AIR",
+    "siteDescription": "Znajdź najlepsze miejsca do wędkowania w Polsce",
+    "language": "Język",
+    "polish": "Polski",
+    "english": "English",
+    "loading": "Ładowanie...",
+    "viewAll": "Zobacz wszystkie",
+    "learnMore": "Dowiedz się więcej",
+    "back": "Powrót",
+    "close": "Zamknij",
+    "search": "Szukaj",
+    "noResults": "Brak wyników"
+  },
+  "nav": {
+    "home": "Strona Główna",
+    "map": "Mapa",
+    "alerts": "Alerty",
+    "rybopedia": "Rybopedia",
+    "profile": "Profil"
+  },
+  "home": {
+    "hero": {
+      "title": "Znajdź Swój Idealny Łów",
+      "subtitle": "FISH.AIR wykorzystuje zaawansowaną analizę danych pogodowych i środowiskowych, aby pomóc wędkarzom w Polsce znaleźć najlepsze miejsca i warunki do udanego połowu.",
+      "cta": "Odkryj Miejsca",
+      "secondaryCta": "Jak To Działa"
+    },
+    "features": {
+      "title": "Inteligentne Wędkowanie",
+      "description": "Wykorzystujemy dane pogodowe, ciśnienie atmosferyczne, temperaturę wody i wiele innych czynników, aby przewidywać aktywność ryb w czasie rzeczywistym.",
+      "items": {
+        "map": {
+          "title": "Interaktywna Mapa",
+          "description": "Przeglądaj wszystkie łowiska w Polsce na jednej interaktywnej mapie. Filtruj według gatunków ryb, warunków i odległości."
+        },
+        "alerts": {
+          "title": "Inteligentne Alerty",
+          "description": "Otrzymuj powiadomienia, gdy warunki są optymalne dla Twoich ulubionych gatunków ryb w wybranych lokalizacjach."
+        },
+        "rybopedia": {
+          "title": "Encyklopedia Ryb",
+          "description": "Kompleksowa baza wiedzy o rybach występujących w polskich wodach — od biologii po techniki połowu."
+        },
+        "forecast": {
+          "title": "Prognoza Brań",
+          "description": "Codzienna prognoza aktywności ryb oparta na danych meteorologicznych i historycznych wzorcach brań."
+        }
+      }
+    },
+    "reviews": {
+      "title": "Co Mówią Wędkarze",
+      "items": [
+        {
+          "name": "Marek K.",
+          "role": "Wędkarz od 15 lat",
+          "text": "FISH.AIR całkowicie zmienił moje podejście do wędkowania. Dzięki alertom nigdy nie przegapiam optymalnych warunków. W zeszłym sezonie złowiłem swojego rekordu!"
+        },
+        {
+          "name": "Anna W.",
+          "role": "Pasjonatka wędkarstwa",
+          "text": "Mapa jest niesamowicie dokładna. Znalazłam miejsca, o których nie miałam pojęcia. Rybopedia to kopalnia wiedzy — polecam każdemu, kto zaczyna przygodę z wędkarstwem."
+        },
+        {
+          "name": "Tomasz R.",
+          "role": "Zawodowy przewodnik wędkarski",
+          "text": "Jako przewodnik korzystam z FISH.AIR codziennie. Prognozy brań są zaskakująco trafne, a moi klienci są zachwyceni rezultatami. To narzędzie numer jeden w moim arsenale."
+        }
+      ]
+    },
+    "team": {
+      "title": "Nasz Zespół",
+      "description": "Jesteśmy grupą pasjonatów technologii i wędkarstwa, którzy połączyli siły, aby stworzyć narzędzie, jakiego sami zawsze potrzebowaliśmy.",
+      "members": {
+        "sandra": {
+          "name": "Sandra Nguyễn",
+          "role": ""
+        },
+        "krzysztof": {
+          "name": "Krzysztof Bombola",
+          "role": ""
+        },
+        "olga": {
+          "name": "Olga Szymczak",
+          "role": ""
+        },
+        "wiktoria": {
+          "name": "Wiktoria Bielejewska",
+          "role": ""
+        }
+      }
+    },
+    "cta": {
+      "title": "Gotowy na Następny Połów?",
+      "description": "Dołącz do społeczności wędkarzy, którzy już korzystają z FISH.AIR, aby łowić więcej i mądrzej.",
+      "button": "Rozpocznij Za Darmo"
+    }
+  },
+  "mapa": {
+    "title": "Mapa Łowisk",
+    "description": "Interaktywna mapa wód w Polsce z prognozami brań w czasie rzeczywistym.",
+    "legend": {
+      "title": "Legenda",
+      "excellent": "Doskonałe warunki",
+      "good": "Dobre warunki",
+      "moderate": "Umiarkowane warunki",
+      "poor": "Słabe warunki",
+      "lake": "Jezioro",
+      "river": "Rzeka",
+      "reservoir": "Zalew"
+    },
+    "filters": {
+      "title": "Filtry",
+      "fishSpecies": "Gatunek ryby",
+      "waterType": "Typ wody",
+      "conditions": "Warunki",
+      "distance": "Odległość",
+      "apply": "Zastosuj",
+      "reset": "Resetuj"
+    },
+    "detail": {
+      "biteChance": "Szansa na branie",
+      "waterTemp": "Temperatura wody",
+      "airTemp": "Temperatura powietrza",
+      "pressure": "Ciśnienie",
+      "wind": "Wiatr",
+      "speciesAvailable": "Dostępne gatunki",
+      "bestHours": "Najlepsze godziny",
+      "lastUpdated": "Ostatnia aktualizacja"
+    },
+    "map": {
+      "scrollToZoom": "Scroluj, by przybliżyć · Przeciągnij, by przesuwać",
+      "noSpotsFound": "Nie znaleziono łowisk",
+      "loadingSpots": "Ładowanie łowisk..."
+    },
+    "regions": {
+      "warminskoMazurskie": "Warmińsko-Mazurskie",
+      "mazowieckie": "Mazowieckie",
+      "podlaskie": "Podlaskie",
+      "dolnoslaskie": "Dolnośląskie",
+      "podkarpackie": "Podkarpackie",
+      "pomorskie": "Pomorskie",
+      "wielkopolskie": "Wielkopolskie",
+      "kujawskoPomorskie": "Kujawsko-Pomorskie",
+      "zachodniopomorskie": "Zachodniopomorskie"
+    },
+    "species": {
+      "pike": "Szczupak",
+      "perch": "Okoń",
+      "pikeperch": "Sandacz",
+      "eel": "Węgorz",
+      "bream": "Leszcz",
+      "catfish": "Sum",
+      "asp": "Boleń",
+      "chub": "Kleń",
+      "vendace": "Sielawa",
+      "whitefish": "Sieja",
+      "brownTrout": "Pstrąg",
+      "grayling": "Lipień",
+      "carp": "Karp"
+    }
+  },
+  "alerts": {
+    "title": "Alerty i Powiadomienia",
+    "description": "Otrzymuj powiadomienia, gdy warunki są optymalne dla Twojego połowu.",
+    "newAlert": "Nowy Alert",
+    "activeAlerts": "Aktywne Alerty",
+    "history": "Historia Alertów",
+    "settings": "Ustawienia Alertów",
+    "createAlert": {
+      "title": "Utwórz Alert",
+      "location": "Lokalizacja",
+      "species": "Gatunek ryby",
+      "conditions": "Warunki",
+      "threshold": "Minimalna szansa brania",
+      "notifyBy": "Powiadom przez",
+      "email": "Email",
+      "push": "Push",
+      "save": "Zapisz Alert",
+      "cancel": "Anuluj"
+    },
+    "table": {
+      "location": "Lokalizacja",
+      "species": "Gatunek",
+      "biteChance": "Szansa brania",
+      "condition": "Warunek",
+      "time": "Czas",
+      "status": "Status",
+      "date": "Data",
+      "active": "Aktywny",
+      "triggered": "Wyzwolony",
+      "dismissed": "Odrzucony"
+    },
+    "empty": {
+      "title": "Brak alertów",
+      "description": "Utwórz swój pierwszy alert, aby otrzymywać powiadomienia o optymalnych warunkach."
+    },
+    "conditions": {
+      "excellent": "Doskonałe",
+      "good": "Dobre",
+      "moderate": "Umiarkowane",
+      "poor": "Słabe"
+    },
+    "statusLabels": {
+      "active": "Aktywny",
+      "triggered": "Wyzwolony",
+      "dismissed": "Odrzucony"
+    },
+    "species": {
+      "pike": "Szczupak",
+      "perch": "Okoń",
+      "pikeperch": "Sandacz",
+      "carp": "Karp",
+      "brownTrout": "Pstrąg potokowy",
+      "catfish": "Sum",
+      "roach": "Płoć",
+      "eel": "Węgorz",
+      "asp": "Boleń",
+      "vendace": "Sielawa",
+      "tench": "Lin",
+      "bream": "Leszcz"
+    }
+  },
+  "rybopedia": {
+    "title": "Encyklopedia Ryb",
+    "description": "Kompleksowa baza wiedzy o rybach występujących w polskich wodach.",
+    "search": "Szukaj gatunku...",
+    "categories": {
+      "all": "Wszystkie",
+      "predatory": "Drapieżne",
+      "cyprinid": "Karpiowate",
+      "salmonid": "Łososiowate",
+      "marine": "Morskie"
+    },
+    "detail": {
+      "overview": "Przegląd",
+      "habitat": "Siedlisko",
+      "behavior": "Zachowanie",
+      "fishing": "Techniki Połowu",
+      "season": "Sezon",
+      "diet": "Dieta",
+      "size": "Rozmiar",
+      "weight": "Waga",
+      "appearance": "Wygląd",
+      "spawning": "Tarło",
+      "bestBait": "Najlepsza przynęta",
+      "bestTime": "Najlepszy czas",
+      "difficulty": "Trudność"
+    },
+    "noResults": {
+      "title": "Nie znaleziono gatunków",
+      "description": "Spróbuj innych kryteriów wyszukiwania."
+    },
+    "backToList": "Powrót do listy",
+    "difficulty": {
+      "easy": "Łatwa",
+      "medium": "Średnio trudna",
+      "hard": "Trudna",
+      "veryHard": "Bardzo trudna"
+    },
+    "fish": {
+      "pike": {
+        "name": "Szczupak",
+        "overview": "Szczupak to jeden z najbardziej znanych i cenionych drapieżników słodkowodnych w Polsce. Charakteryzuje się wydłużonym, torpedowatym ciałem i charakterystycznym spłaszczonym pyskiem przypominającym kaczów dziob.",
+        "habitat": "Preferuje zarośnięte, płytkie wody stojące i wolno płynące. Spotykany w jeziorach, stawach, starorzeczach i spokojnych odcinkach rzek.",
+        "behavior": "Drapieżnik polujący z zasadzki. Atakuje gwałtownie z ukrycia, wykorzystując roślinność wodną jako maskowanie. Aktywny głównie o świcie i zmierzchu.",
+        "fishing": "Skuteczne metody to spinning (woblery, gumy, błystki wahadłowe), metoda na żywca oraz muchówka. Najlepsze rezultaty daje łowienie przy roślinności i strukturach podwodnych.",
+        "season": "Cały rok, z wyłączeniem okresu ochronnego (1 stycznia – 30 kwietnia). Najlepsze brań jesienią i wiosną.",
+        "diet": "Ryby (płoć, okoń, leszcz), żaby, małe ssaki wodne i ptaki. Młode osobniki żywią się bezkręgowcami.",
+        "avgSize": "50–80 cm",
+        "maxWeight": "do 35 kg",
+        "appearance": "Wydłużone ciało w odcieniach zieleni i oliwki z jasnymi plamami. Płetwy grzbietowa i odbytowa przesunięte ku tyłowi.",
+        "spawning": "Marzec–kwiecień, przy temperaturze wody 8–12°C, na zalanych łąkach i płytkich rozlewiskach.",
+        "bestBait": "Wobler, guma, błystka wahadłowa, żywiec",
+        "bestTime": "Świt i zmierzch, dni pochmurne",
+        "difficulty": "medium"
+      },
+      "perch": {
+        "name": "Okoń",
+        "overview": "Okoń to pospolity drapieżnik o charakterystycznym pasiastym ubarwieniu. Jest jednym z najczęściej łowionych gatunków w polskich wodach, cenionym zarówno przez początkujących, jak i zaawansowanych wędkarzy.",
+        "habitat": "Zasiedla różnorodne wody — jeziora, rzeki, stawy, zbiorniki zaporowe. Preferuje miejsca z twardym dnem i obecnością struktur podwodnych.",
+        "behavior": "Młode osobniki tworzą ławice, dorosłe polują samotnie lub w małych grupach. Aktywne głównie w ciągu dnia.",
+        "fishing": "Spinning (małe woblery, gumy, obrotówki), metoda gruntowa i spławikowa na robaka. Okoń chętnie bierze na przynęty naturalne i sztuczne.",
+        "season": "Cały rok (bez okresu ochronnego). Najlepsze brań od wiosny do jesieni. Zimą aktywny pod lodem.",
+        "diet": "Bezkręgowce wodne, narybek, małe ryby, ikra innych gatunków.",
+        "avgSize": "15–30 cm",
+        "maxWeight": "do 4,5 kg",
+        "appearance": "Ciało lekko bocznie spłaszczone z charakterystycznymi ciemnymi, pionowymi pasami. Płetwy brzuszne i odbytowe czerwonawe.",
+        "spawning": "Marzec–maj, przy temperaturze 7–12°C, na płytkich, zarośniętych odcinkach.",
+        "bestBait": "Robak, mała guma, obrotówka, błystka",
+        "bestTime": "Cały dzień, szczególnie rano i po południu",
+        "difficulty": "easy"
+      },
+      "pikeperch": {
+        "name": "Sandacz",
+        "overview": "Sandacz to wysoko ceniony drapieżnik o delikatnym, białym mięsie. Preferuje głębokie, mętne wody i jest aktywny głównie nocą. Wymaga specyficznych technik połowu.",
+        "habitat": "Duże, głębokie jeziora, zbiorniki zaporowe, dolne biegi rzek o mulistym lub piaszczystym dnie.",
+        "behavior": "Nocny drapieżnik, w ciągu dnia przebywa na głębokości. Poluje grupowo, naganianie ofiar w kierunku brzegu.",
+        "fishing": "Spinning (gumy, woblery głęboko schodzące), metoda na martwą rybkę, trollowanie. Kluczowe jest prowadzenie przynęty blisko dna.",
+        "season": "Cały rok, z wyłączeniem okresu ochronnego (1 stycznia – 31 maja). Najlepszy jesienią.",
+        "diet": "Ryby (ukleja, stynka, jazgarz), preferuje wąskie ofiary.",
+        "avgSize": "40–60 cm",
+        "maxWeight": "do 15 kg",
+        "appearance": "Wydłużone, wrzecionowate ciało w odcieniach szarości i zieleni. Charakterystyczne kłowe zęby.",
+        "spawning": "Kwiecień–maj, przy temperaturze 12–18°C, na piaszczysto-kamienistym podłożu.",
+        "bestBait": "Guma (kopytka, rippery), wobler, martwa rybka",
+        "bestTime": "Noc, świt, zmierzch, dni pochmurne",
+        "difficulty": "hard"
+      },
+      "carp": {
+        "name": "Karp",
+        "overview": "Karp to jedna z najważniejszych ryb w polskiej kulturze wędkarskiej. Duży, silny i przebiegły, stanowi wymagające wyzwanie nawet dla doświadczonych wędkarzy karpiowych.",
+        "habitat": "Ciepłe, stojące lub wolno płynące wody o mulistym dnie. Preferuje stawy, jeziora i starorzecza.",
+        "behavior": "Żeruje przy dnie, aktywnie przekopuje osady denne w poszukiwaniu pokarmu. Ostrożny i płochliwy.",
+        "fishing": "Metoda gruntowa i spławikowa z użyciem specjalistycznego sprzętu karpiowego. Kluczowe jest nęcenie i dobór odpowiednich przynęt (kulki proteinowe, kukurydza).",
+        "season": "Maj–październik (najlepsze lato). Zimą aktywność znacznie spada.",
+        "diet": "Bezkręgowce denne, larwy owadów, materia roślinna, mięczaki.",
+        "avgSize": "40–70 cm",
+        "maxWeight": "do 40 kg",
+        "appearance": "Masywne, wygrzbiecone ciało pokryte dużymi łuskami (forma pełnołuska) lub częściowo nagie (lustrzenko). Złocisto-brązowe ubarwienie.",
+        "spawning": "Maj–czerwiec, przy temperaturze 18–20°C, na płytkich, zarośniętych obszarach.",
+        "bestBait": "Kulki proteinowe, kukurydza, robaki, ciasto",
+        "bestTime": "Wczesny rano i wieczór, ciepłe noce",
+        "difficulty": "hard"
+      },
+      "brownTrout": {
+        "name": "Pstrąg potokowy",
+        "overview": "Pstrąg potokowy to piękna, waleczna ryba zamieszkująca czyste, chłodne wody górskie i podgórskie. Wymaga krystalicznie czystej, natlenionej wody.",
+        "habitat": "Szybko płynące potoki i rzeki górskie o kamienistym dnie, chłodne jeziora. Wymaga wysokiego natlenienia wody.",
+        "behavior": "Terytorialny, zajmuje stanowiska za kamieniami i w zacienionych miejscach. Aktywnie żeruje na owady spadające na powierzchnię.",
+        "fishing": "Muchówka (główna metoda), spinning ultralekki (małe obrotówki, woblery). Wymaga delikatnego sprzętu i precyzji.",
+        "season": "Marzec–sierpień (w zależności od obwodu rybackiego). Okres ochronny: 1 września – 31 grudnia.",
+        "diet": "Owady wodne i lądowe, skorupiaki, małe ryby.",
+        "avgSize": "20–35 cm",
+        "maxWeight": "do 5 kg",
+        "appearance": "Smukłe ciało z charakterystycznymi czerwonymi i czarnymi kropkami na bokach. Tłuszczowa płetwa grzbietowa.",
+        "spawning": "Październik–styczeń, na żwirowym podłożu w zimnej, szybko płynącej wodzie.",
+        "bestBait": "Sztuczna mucha, mała obrotówka, robak",
+        "bestTime": "Ranek i wieczór, po deszczu przy zmętnieniu wody",
+        "difficulty": "hard"
+      },
+      "catfish": {
+        "name": "Sum",
+        "overview": "Sum to największa ryba słodkowodna Europy. Może osiągać imponujące rozmiary i jest obiektem marzeń wielu wędkarzy. Polowanie na suma wymaga mocnego sprzętu i dużej cierpliwości.",
+        "habitat": "Duże, głębokie rzeki, zbiorniki zaporowe, jeziora. Preferuje miejsca z podwodnymi przeszkodami i głębokimi dołami.",
+        "behavior": "Aktywny głównie nocą. Dzień spędza w głębokich kryjówkach. Poluje z zasadzki, używając wąsów do lokalizacji ofiar.",
+        "fishing": "Metoda gruntowa na żywca, spinning (duże gumy, woblery), metoda na pion (pukawka). Wymaga bardzo mocnego sprzętu.",
+        "season": "Maj–październik (najlepszy czerwiec–sierpień). Okres ochronny: 1 stycznia – 31 maja.",
+        "diet": "Ryby, żaby, ptactwo wodne, małe ssaki.",
+        "avgSize": "80–150 cm",
+        "maxWeight": "do 150 kg",
+        "appearance": "Masywne, bezłuskie ciało, szeroka, płaska głowa z charakterystycznymi długimi wąsami. Oliwkowo-brązowe ubarwienie.",
+        "spawning": "Maj–lipiec, przy temperaturze 20–24°C, w płytkich, zarośniętych zatokach.",
+        "bestBait": "Żywiec, martwa rybka, duża guma, pęczek robaków",
+        "bestTime": "Noc, wczesny świt, dni pochmurne z burzą",
+        "difficulty": "veryHard"
+      },
+      "roach": {
+        "name": "Płoć",
+        "overview": "Płoć to jedna z najpospolitszych ryb w Polsce, masowo występująca w różnorodnych wodach. Jest doskonałym gatunkiem dla początkujących wędkarzy.",
+        "habitat": "Wszechobecna — jeziora, rzeki, kanały, stawy, zbiorniki zaporowe. Preferuje wody stojące i wolno płynące.",
+        "behavior": "Tworzy duże ławice. Żeruje głównie w toni wodnej i przy dnie. Aktywna przez cały dzień.",
+        "fishing": "Metoda spławikowa i gruntowa. Płoć chętnie bierze na drobne przynęty naturalne i roślinne.",
+        "season": "Cały rok (bez okresu ochronnego). Najlepsze brań wiosną i jesienią.",
+        "diet": "Bezkręgowce, larwy owadów, glony, materia roślinna.",
+        "avgSize": "15–25 cm",
+        "maxWeight": "do 2 kg",
+        "appearance": "Lekko bocznie spłaszczone ciało o srebrzystym ubarwieniu. Czerwonawe płetwy i pomarańczowa tęczówka oka.",
+        "spawning": "Kwiecień–maj, przy temperaturze 10–15°C, na płytkich, zarośniętych obszarach.",
+        "bestBait": "Biały robak, czerwony robak, kukurydza, ciasto",
+        "bestTime": "Cały dzień, szczególnie rano",
+        "difficulty": "easy"
+      },
+      "eel": {
+        "name": "Węgorz",
+        "overview": "Węgorz to tajemnicza ryba o wężowatym kształcie i fascynującym cyklu życiowym. Odbywa dalekie wędrówki na tarło do Morza Sargassowego.",
+        "habitat": "Wody stojące i wolno płynące o mulistym dnie. Spotykany w jeziorach, stawach i rzekach.",
+        "behavior": "Nocny tryb życia. Dzień spędza zagrzebany w mule. Aktywny od wiosny do jesieni, zimą zapada w odrętwienie.",
+        "fishing": "Metoda gruntowa na żywca lub martwą rybkę, metoda spławikowa z gruntu. Najlepsze rezultaty nocą.",
+        "season": "Maj–październik. Okres ochronny: 1 grudnia – 31 marca (wymiar ochronny 50 cm).",
+        "diet": "Bezkręgowce denne, małe ryby, żaby, padlina.",
+        "avgSize": "50–80 cm",
+        "maxWeight": "do 6 kg",
+        "appearance": "Długie, wężowate ciało pokryte śluzem. Ciemnozielone lub brązowe na grzbiecie, żółtawe na brzuchu.",
+        "spawning": "Odbywa tarło w Morzu Sargassowym na głębokości ok. 400–700 m. Dojrzałe osobniki giną po tarle.",
+        "bestBait": "Żywiec, martwa rybka, rosówka, pęczek robaków",
+        "bestTime": "Noc, szczególnie ciepłe i ciemne noce",
+        "difficulty": "medium"
+      }
+    }
+  },
+  "profile": {
+    "title": "Mój Profil",
+    "description": "Zarządzaj swoim kontem i preferencjami wędkarskimi.",
+    "personalInfo": "Dane Osobowe",
+    "fishingPreferences": "Preferencje Wędkarskie",
+    "catchLog": "Dziennik Połowów",
+    "savedLocations": "Zapisane Lokalizacje",
+    "settings": "Ustawienia Konta",
+    "fields": {
+      "name": "Imię i Nazwisko",
+      "email": "Email",
+      "phone": "Telefon",
+      "location": "Lokalizacja",
+      "experience": "Doświadczenie",
+      "preferredSpecies": "Preferowane Gatunki",
+      "preferredWaterType": "Preferowany Typ Wód",
+      "notifications": "Powiadomienia",
+      "language": "Język"
+    },
+    "experience": {
+      "beginner": "Początkujący",
+      "intermediate": "Średniozaawansowany",
+      "advanced": "Zaawansowany",
+      "expert": "Ekspert"
+    },
+    "stats": {
+      "totalCatches": "Łączna liczba połowów",
+      "speciesCount": "Liczba gatunków",
+      "biggestCatch": "Największy połów",
+      "favoriteSpot": "Ulubione miejsce"
+    },
+    "profileSubtitle": "Wędkarz od 2020",
+    "editProfile": "Edytuj profil",
+    "personalInfoDescription": "Twoje dane osobowe wyświetlane w profilu.",
+    "preferencesDescription": "Ustaw swoje preferencje wędkarskie, aby otrzymywać spersonalizowane rekomendacje.",
+    "settingsDescription": "Zarządzaj ustawieniami swojego konta i powiadomieniami.",
+    "notificationsDescription": "Otrzymuj alerty o optymalnych warunkach",
+    "languageDescription": "Zmień język interfejsu",
+    "notificationsEnabled": "Włączone",
+    "deleteAccount": "Usuń konto",
+    "deleteAccountDescription": "Trwale usuń konto i wszystkie dane",
+    "delete": "Usuń",
+    "preferredSpecies": ["Szczupak", "Okoń", "Sandacz", "Sum", "Karp"],
+    "preferredWaterTypes": ["Jeziora", "Rzeki", "Zbiorniki zaporowe"]
+  },
+  "footer": {
+    "about": "FISH.AIR to nowoczesna platforma dla wędkarzy w Polsce, wykorzystująca dane do przewidywania optymalnych warunków połowu.",
+    "quickLinks": "Szybkie Linki",
+    "contact": "Kontakt",
+    "rights": "Wszelkie prawa zastrzeżone.",
+    "privacy": "Polityka Prywatności",
+    "terms": "Regulamin"
+  }
+}
