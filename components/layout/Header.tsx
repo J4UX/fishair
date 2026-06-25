@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/src/i18n/navigation";
 import { Button } from "@/components/ui/button";
@@ -19,6 +20,8 @@ const navItems = [
 export function Header() {
   const t = useTranslations("nav");
   const pathname = usePathname();
+
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -57,7 +60,7 @@ export function Header() {
           <LocaleSwitcher />
 
           {/* Mobile Navigation */}
-          <Sheet>
+          <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger render={<Button variant="ghost" size="icon" className="md:hidden" />}>
               <Menu data-icon="inline-start" />
               <span className="sr-only">Menu</span>
@@ -65,7 +68,7 @@ export function Header() {
             <SheetContent side="right" className="w-[280px]">
               <nav className="mt-8 flex flex-col gap-2">
                 {navItems.map((item) => (
-                  <Link key={item.key} href={item.href}>
+                  <Link key={item.key} href={item.href} onClick={() => setIsOpen(false)}>
                     <Button
                       variant={
                         pathname === item.href ? "secondary" : "ghost"
