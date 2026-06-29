@@ -127,7 +127,12 @@
       "wind": "Wind",
       "speciesAvailable": "Available species",
       "bestHours": "Best hours",
-      "lastUpdated": "Last updated"
+      "lastUpdated": "Last updated",
+      "pzwZone": "PZW District",
+      "permits": "Required Permits",
+      "cloudCover": "Cloud cover",
+      "realtimeBiteChance": "Real-time bite chance",
+      "loadingConditions": "Fetching current conditions..."
     },
     "map": {
       "scrollToZoom": "Scroll to zoom · Drag to pan",

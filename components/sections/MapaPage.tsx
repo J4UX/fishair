@@ -32,6 +32,8 @@ import {
   Wind,
   Gauge,
   Clock,
+  Cloud,
+  FileText,
 } from "lucide-react";
 import { PolandMap } from "@/components/map/PolandMap";
 import type { FishingSpot } from "@/types/fishing-spots";
@@ -216,6 +218,7 @@ function useFishingSpots() {
             region: (doc.region as string) ?? null,
             biteChance: (doc.biteChance as number) ?? null,
             environmentalData: doc.environmentalData as FishingSpot["environmentalData"],
+            pzwZone: (doc.pzwZone as any) ?? null,
             species: (doc.species as string[]) ?? [],
             createdAt: doc.createdAt as string,
             updatedAt: doc.updatedAt as string,
@@ -389,44 +392,104 @@ function SpotList({
 }
 
 // ---------------------------------------------------------------------------
+// Hook: fetch real-time conditions
+// ---------------------------------------------------------------------------
+function useLiveConditions(spot: FishingSpot | null) {
+  const [liveData, setLiveData] = useState<{
+    weather: any;
+    speciesChances: Record<string, number>;
+  } | null>(null);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    if (!spot) {
+      setLiveData(null);
+      return;
+    }
+    
+    let cancelled = false;
+    async function load() {
+      setLoading(true);
+      try {
+        const speciesQuery = (spot.species ?? []).join(",");
+        const res = await fetch(
+          `/api/fishing-conditions?lat=${spot.coordinates.latitude}&lng=${spot.coordinates.longitude}&species=${speciesQuery}`
+        );
+        if (!res.ok) throw new Error("Failed to fetch live conditions");
+        const data = await res.json();
+        if (!cancelled) setLiveData(data);
+      } catch (err) {
+        console.error(err);
+      } finally {
+        if (!cancelled) setLoading(false);
+      }
+    }
+    load();
+    return () => { cancelled = true; };
+  }, [spot]);
+
+  return { liveData, loadingLive: loading };
+}
+
+// ---------------------------------------------------------------------------
 // Detail panel content
 // ---------------------------------------------------------------------------
 function DetailContent({
   spot,
   t,
+  liveData,
+  loadingLive,
 }: {
   spot: FishingSpot;
   t: ReturnType<typeof useTranslations<"mapa">>;
+  liveData: any;
+  loadingLive: boolean;
 }) {
-  const env = spot.environmentalData;
+  const env = liveData?.weather || spot.environmentalData;
   const speciesArr = spot.species ?? [];
+  const pzwZone = spot.pzwZone;
 
   return (
     <>
-      <div className="flex flex-col gap-2">
-        {spot.biteChance != null && (
-          <div className="flex items-center justify-between">
-            <span className="text-xs text-muted-foreground">
-              {t("detail.biteChance")}
-            </span>
-            <span className="text-sm font-semibold">{spot.biteChance}%</span>
+      {loadingLive && (
+        <div className="mb-4 flex items-center justify-center p-4">
+          <div className="flex flex-col items-center gap-2 text-muted-foreground">
+            <span className="h-5 w-5 animate-spin rounded-full border-2 border-primary border-t-transparent" />
+            <span className="text-xs">{t("detail.loadingConditions")}</span>
           </div>
-        )}
+        </div>
+      )}
+
+      {pzwZone && (
+        <div className="mb-4 rounded-lg bg-muted/50 p-3">
+          <p className="text-xs font-semibold text-primary">{t("detail.pzwZone")}</p>
+          <p className="mt-0.5 text-sm font-medium">{pzwZone.name}</p>
+          {pzwZone.permitsRequired && (
+            <p className="mt-2 flex items-start gap-1.5 text-xs text-muted-foreground">
+              <FileText className="mt-0.5 size-3 shrink-0" />
+              <span>{pzwZone.permitsRequired}</span>
+            </p>
+          )}
+        </div>
+      )}
+
+      <div className="flex flex-col gap-2">
         {env?.waterTemp != null && (
           <div className="flex items-center justify-between">
             <span className="flex items-center gap-1 text-xs text-muted-foreground">
               <Thermometer className="size-3" />
               {t("detail.waterTemp")}
             </span>
-            <span className="text-sm">{env.waterTemp}°C</span>
+            <span className="text-sm">{Math.round(env.waterTemp)}°C</span>
           </div>
         )}
         {env?.airTemp != null && (
           <div className="flex items-center justify-between">
-            <span className="text-xs text-muted-foreground">
+            <span className="flex items-center gap-1 text-xs text-muted-foreground">
+              <Thermometer className="size-3" />
               {t("detail.airTemp")}
             </span>
-            <span className="text-sm">{env.airTemp}°C</span>
+            <span className="text-sm">{Math.round(env.airTemp)}°C</span>
           </div>
         )}
         {env?.pressure != null && (
@@ -435,7 +498,7 @@ function DetailContent({
               <Gauge className="size-3" />
               {t("detail.pressure")}
             </span>
-            <span className="text-sm">{env.pressure} hPa</span>
+            <span className="text-sm">{Math.round(env.pressure)} hPa</span>
           </div>
         )}
         {env?.windSpeed != null && (
@@ -444,32 +507,44 @@ function DetailContent({
               <Wind className="size-3" />
               {t("detail.wind")}
             </span>
-            <span className="text-sm">{env.windSpeed} km/h</span>
+            <span className="text-sm">{Math.round(env.windSpeed)} km/h</span>
           </div>
         )}
-        {env?.bestHours && (
+        {env?.cloudCover != null && (
           <div className="flex items-center justify-between">
             <span className="flex items-center gap-1 text-xs text-muted-foreground">
-              <Clock className="size-3" />
-              {t("detail.bestHours")}
+              <Cloud className="size-3" />
+              {t("detail.cloudCover")}
             </span>
-            <span className="text-sm">{env.bestHours}</span>
+            <span className="text-sm">{Math.round(env.cloudCover)}%</span>
           </div>
         )}
       </div>
 
       {speciesArr.length > 0 && (
         <>
-          <Separator className="my-2" />
+          <Separator className="my-3" />
           <p className="text-xs font-medium text-muted-foreground">
-            {t("detail.speciesAvailable")}:
+            {t("detail.realtimeBiteChance")}:
           </p>
-          <div className="mt-1.5 flex flex-wrap gap-1">
-            {speciesArr.map((s) => (
-              <Badge key={s} variant="outline" className="text-xs">
-                {getSpeciesName(s, t)}
-              </Badge>
-            ))}
+          <div className="mt-2 flex flex-col gap-2.5">
+            {speciesArr.map((s) => {
+              const chance = liveData?.speciesChances?.[s] ?? spot.biteChance ?? 50;
+              return (
+                <div key={s} className="flex flex-col gap-1.5">
+                  <div className="flex items-center justify-between text-xs">
+                    <span className="font-medium">{getSpeciesName(s, t)}</span>
+                    <span className="font-semibold">{Math.round(chance)}%</span>
+                  </div>
+                  <div className="h-1.5 w-full overflow-hidden rounded-full bg-secondary">
+                    <div
+                      className={`h-full transition-all duration-1000 ${getBiteColor(chance)}`}
+                      style={{ width: `${Math.max(5, chance)}%` }}
+                    />
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </>
       )}
@@ -485,6 +560,7 @@ export function MapaPage() {
   const { spots, loading } = useFishingSpots();
 
   const [selected, setSelected] = useState<FishingSpot | null>(null);
+  const { liveData, loadingLive } = useLiveConditions(selected);
   const [search, setSearch] = useState("");
   const [listOpen, setListOpen] = useState(false);
 
@@ -606,7 +682,7 @@ export function MapaPage() {
                   </p>
                 )}
                 <Separator className="my-3" />
-                <DetailContent spot={selected} t={t} />
+                <DetailContent spot={selected} t={t} liveData={liveData} loadingLive={loadingLive} />
               </div>
 
               {/* Mobile bottom panel — scrollable, capped at ~55% viewport */}
@@ -644,7 +720,7 @@ export function MapaPage() {
                 {/* Scrollable content */}
                 <div className="overflow-y-auto px-4 pb-6">
                   <Separator className="mb-3" />
-                  <DetailContent spot={selected} t={t} />
+                  <DetailContent spot={selected} t={t} liveData={liveData} loadingLive={loadingLive} />
                 </div>
               </div>
             </>

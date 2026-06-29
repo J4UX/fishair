@@ -207,6 +207,16 @@ export const FishingSpots: CollectionConfig = {
     // Relationships
     // -------------------------------------------------------------------------
     {
+      name: "pzwZone",
+      type: "relationship",
+      relationTo: "pzw-zones",
+      hasMany: false,
+      label: {
+        pl: "Okręg / Strefa PZW",
+        en: "PZW Zone / District",
+      },
+    },
+    {
       name: "species",
       type: "relationship",
       relationTo: "fish-species",

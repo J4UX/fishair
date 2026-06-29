@@ -48,6 +48,14 @@ export interface FishingSpot {
    * Mirrors the `environmentalData` group field in FishingSpots collection.
    */
   environmentalData?: FishingSpotEnvironmentalData | null;
+  /** PZW Zone / District information */
+  pzwZone?: {
+    id: string;
+    name: string;
+    region?: string | null;
+    rules?: any | null;
+    permitsRequired?: string | null;
+  } | null;
   /** Related fish species names (populated from relationship) */
   species?: string[];
   createdAt: string;

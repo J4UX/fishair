@@ -43,3 +43,8 @@ next-env.d.ts
 # payload
 /payload-types.ts
 /public/media
+
+# python scripts
+/.venv/
+/cache/
+fetch_water.py

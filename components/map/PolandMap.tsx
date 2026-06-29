@@ -13,6 +13,7 @@ import { cn } from "@/lib/utils";
 import type { FishingSpot, PolandMapProps } from "@/types/fishing-spots";
 
 const POLAND_GEOJSON = "/maps/poland.json";
+const WATER_GEOJSON = "/maps/poland-water.json";
 
 const PROJECTION_CONFIG = {
   scale: 2400,
@@ -185,33 +186,81 @@ export function PolandMap({ spots, selectedSpotId, onSpotSelect }: PolandMapProp
           center={PROJECTION_CONFIG.center}
           zoom={1}
           minZoom={0.7}
-          maxZoom={8}
+          maxZoom={50}
         >
           {/* Poland polygon */}
           <Geographies geography={POLAND_GEOJSON}>
-            {({ geographies }) =>
-              geographies.map((geo) => (
-                <Geography
-                  key={geo.rsmKey}
-                  geography={geo}
-                  style={{
-                    default: {
-                      fill: "#dbeafe",
-                      stroke: "#93c5fd",
-                      strokeWidth: 0.6,
-                      outline: "none",
-                    },
-                    hover: {
-                      fill: "#bfdbfe",
-                      stroke: "#60a5fa",
-                      strokeWidth: 0.8,
-                      outline: "none",
-                    },
-                    pressed: { fill: "#93c5fd", outline: "none" },
-                  }}
-                />
-              ))
-            }
+            {({ geographies }) => (
+              <>
+                <defs>
+                  <clipPath id="poland-clip">
+                    {geographies.map((geo) => (
+                      <Geography key={`clip-${geo.rsmKey}`} geography={geo} />
+                    ))}
+                  </clipPath>
+                </defs>
+                {geographies.map((geo) => (
+                  <Geography
+                    key={geo.rsmKey}
+                    geography={geo}
+                    style={{
+                      default: {
+                        fill: "#dbeafe",
+                        stroke: "#93c5fd",
+                        strokeWidth: 0.6,
+                        outline: "none",
+                      },
+                      hover: {
+                        fill: "#bfdbfe",
+                        stroke: "#60a5fa",
+                        strokeWidth: 0.8,
+                        outline: "none",
+                      },
+                      pressed: { fill: "#93c5fd", outline: "none" },
+                    }}
+                  />
+                ))}
+              </>
+            )}
+          </Geographies>
+
+          {/* Water features (Rivers, Lakes) */}
+          <Geographies geography={WATER_GEOJSON}>
+            {({ geographies }) => (
+              <g clipPath="url(#poland-clip)">
+                {geographies.map((geo, index) => {
+                  const isLine =
+                    geo.geometry.type === "LineString" ||
+                    geo.geometry.type === "MultiLineString";
+                  
+                  return (
+                    <Geography
+                      key={`water-${index}`}
+                      geography={geo}
+                      style={{
+                        default: {
+                          fill: isLine ? "none" : "#3b82f6",
+                          stroke: isLine ? "#3b82f6" : "none",
+                          strokeWidth: isLine ? 1.5 : 0,
+                          outline: "none",
+                        },
+                        hover: {
+                          fill: isLine ? "none" : "#2563eb",
+                          stroke: isLine ? "#2563eb" : "none",
+                          strokeWidth: isLine ? 2 : 0,
+                          outline: "none",
+                        },
+                        pressed: {
+                          fill: isLine ? "none" : "#1d4ed8",
+                          stroke: isLine ? "#1d4ed8" : "none",
+                          outline: "none",
+                        },
+                      }}
+                    />
+                  );
+                })}
+              </g>
+            )}
           </Geographies>
 
           {/* Fishing spot markers */}

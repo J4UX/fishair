@@ -127,7 +127,12 @@
       "wind": "Wiatr",
       "speciesAvailable": "Dostępne gatunki",
       "bestHours": "Najlepsze godziny",
-      "lastUpdated": "Ostatnia aktualizacja"
+      "lastUpdated": "Ostatnia aktualizacja",
+      "pzwZone": "Okręg PZW",
+      "permits": "Wymagane Zezwolenia",
+      "cloudCover": "Zachmurzenie",
+      "realtimeBiteChance": "Bieżąca szansa na branie",
+      "loadingConditions": "Pobieranie aktualnych warunków..."
     },
     "map": {
       "scrollToZoom": "Scroluj, by przybliżyć · Przeciągnij, by przesuwać",

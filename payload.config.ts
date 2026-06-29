@@ -12,6 +12,7 @@ import { FishSpecies } from "./collections/FishSpecies";
 import { Reviews } from "./collections/Reviews";
 import { TeamMembers } from "./collections/TeamMembers";
 import { FishingSpots } from "./collections/FishingSpots";
+import { PZWZones } from "./collections/PZWZones";
 
 const filename = fileURLToPath(import.meta.url);
 const dirname = path.dirname(filename);
@@ -23,7 +24,7 @@ export default buildConfig({
       baseDir: path.resolve(dirname),
     },
   },
-  collections: [Users, Media, WaterBodies, Alerts, FishSpecies, Reviews, TeamMembers, FishingSpots],
+  collections: [Users, Media, WaterBodies, Alerts, FishSpecies, Reviews, TeamMembers, FishingSpots, PZWZones],
   editor: lexicalEditor(),
   secret: process.env.PAYLOAD_SECRET || "dev-secret-change-in-production",
   typescript: {
