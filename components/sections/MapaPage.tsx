@@ -402,7 +402,8 @@ function useLiveConditions(spot: FishingSpot | null) {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    if (!spot) {
+    const currentSpot = spot;
+    if (!currentSpot) {
       setLiveData(null);
       return;
     }
@@ -411,9 +412,9 @@ function useLiveConditions(spot: FishingSpot | null) {
     async function load() {
       setLoading(true);
       try {
-        const speciesQuery = (spot.species ?? []).join(",");
+        const speciesQuery = (currentSpot!.species ?? []).join(",");
         const res = await fetch(
-          `/api/fishing-conditions?lat=${spot.coordinates.latitude}&lng=${spot.coordinates.longitude}&species=${speciesQuery}`
+          `/api/fishing-conditions?lat=${currentSpot!.coordinates.latitude}&lng=${currentSpot!.coordinates.longitude}&species=${speciesQuery}`
         );
         if (!res.ok) throw new Error("Failed to fetch live conditions");
         const data = await res.json();
